@@ -1,0 +1,9 @@
+<view class="st1">
+  <image class="st2" mode="scaleToFill" src="{{avatarUrl}}" />
+  <view class="st3">{{nickName}}</view>
+  <ul class="st4">
+    <navigator url="/pages/history/history"><li><image mode="scaleToFill" src="/icon/history.png"/>历史纪录</li></navigator>
+    <navigator><li><image mode="scaleToFill" src="/icon/seting.png"/>设置</li></navigator>
+  </ul>
+</view>
+

@@ -1,0 +1,17 @@
+<view class="st1">
+<view class="st2">{{obj.title}}</view>
+<view class="st3">{{obj.dataTime}}</view>
+<view class="st4">
+<image class="prev" src="{{backUrl}}larrow.png" bindtap="prev"/>
+<image class="play" src="{{backUrl}}play.png" bindtap="play"/>
+<image class="pause" src="{{backUrl}}pause.png" bindtap="pause"/>
+<image class="stop" src="{{backUrl}}stop.png" bindtap="stop"/>
+<image class="next" src="{{backUrl}}rarrow.png" bindtap="next"/>
+</view>
+<progress percent="{{percent}}" show-info stroke-width="2"/>
+<view class="st5">
+<text class="st6">{{current}}</text>/<text class="st7">{{total}}s</text>
+</view>
+进度：<slider bindchange="sliderChange" value="{{percent}}" show-value/>
+<image class="st8" src="{{obj.smSrc}}"/>
+</view>

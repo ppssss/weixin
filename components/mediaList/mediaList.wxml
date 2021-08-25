@@ -1,0 +1,22 @@
+<scroll-view class="st1" scroll-y="true" bindrefresherrefresh="dFresh" bindscrolltolower="loaded" refresher-enabled="true" refresher-triggered="{{flag}}">
+<block wx:if="{{srcType==='audio'}}">
+<navigator wx:for="{{arr}}" class="st2" url="/pages/audioPlay/audioPlay?id={{item.id}}" wx:key="id">
+<view class="st3">
+<view class="st4">{{item.title}}</view>
+<view class="st5">{{item.dateTime}}</view>
+</view>
+<image class="st6" src="{{item.src}}" style="width:180rpx;height:140rpx" mode="scaleToFill"/>
+</navigator>
+</block>
+
+<block wx:else>
+<navigator wx:for="{{arr}}" class="st2" url="/pages/videoPlay/videoPlay?id={{item.id}}" wx:key="id">
+<view class="st3">
+<view class="st4">{{item.title}}</view>
+<view class="st5">{{item.date}}</view>
+</view>
+<image class="st6" src="{{item.src}}" style="width:180rpx;height:140rpx" mode="scaleToFill"/>
+</navigator>
+</block>
+
+</scroll-view>

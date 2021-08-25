@@ -1,0 +1,3 @@
+<view class="container" style="{{style}}">
+<button class="one" style="width:280rpx;" bindtap="enter">进入学习</button> 
+</view>

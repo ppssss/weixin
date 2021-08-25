@@ -1,0 +1,23 @@
+
+<!-- <scroll-view class="st1" style="{{screenH}}" scroll-y > -->
+  <view class="container" style="{{screenW}}">
+<view>
+<swiper autoplay interval="2000" circular class="one" indicator-dots="true" indicator-active-color="#660033">
+<navigator wx:for="{{arr}}" url="/pages/showArt/showArt?id={{item.id}}" wx:key='id'>
+<swiper-item class="swimg">
+<image mode="scaleToFill" style="height:100%;width:100%" src="{{url}}{{item.url}}"/>
+</swiper-item>
+</navigator>
+</swiper>
+</view>
+</view>
+<block wx:for="{{arr1}}" wx:key='id'>
+<navigator class="st2" url="/pages/showArt/showArt?id={{item.id}}" hover-class="st3">
+<view class="st4">
+<view class="st5">{{item.title}}</view>
+<view class="st6">{{item.time}}</view>
+</view>
+<image class="st7" src="{{item.smSrc}}" mode="scaleToFill"></image>
+</navigator>
+</block>
+<!-- </scroll-view> -->

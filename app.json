@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/swiper/swiper",
+    "pages/home/home",
+    "pages/showArt/showArt",
+    "pages/video/video",
+    "pages/audioPlay/audioPlay",
+    "pages/videoPlay/videoPlay",
+    "pages/comment/comment",
+    "pages/mine/mine",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "backgroundColor": "#ff6666"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#33cc00",
+    "backgroundColor": "#fcfcfc",
+    "list": [
+      {
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/homeSelect.png",
+        "pagePath": "pages/swiper/swiper",
+        "text": "首页"
+      },
+      {
+        "iconPath": "icon/cream.png",
+        "selectedIconPath": "icon/creamSelect.png",
+        "pagePath": "pages/home/home",
+        "text": "听书"
+      },
+      {
+        "iconPath": "icon/message.png",
+        "selectedIconPath": "icon/messageSelect.png",
+        "pagePath": "pages/video/video",
+        "text": "视频"
+      },
+      {
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/mySelect.png",
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+}

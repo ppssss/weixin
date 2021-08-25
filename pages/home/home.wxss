@@ -1,0 +1,23 @@
+.st1{
+  height: 100%;
+}
+.st2{
+  justify-content: space-around;
+  display: flex;
+  background-color: rgb(228, 227, 227);
+  height: 80rpx;
+  align-items: center;
+}
+.st3.on{
+  color: red;
+  border-bottom: 1px solid red;
+}
+.st5{
+  height: 100%;
+}
+.st6{
+  height: 100%;
+}
+.st4{
+  white-space: nowrap;
+}

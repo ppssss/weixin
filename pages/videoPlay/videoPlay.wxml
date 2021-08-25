@@ -1,0 +1,36 @@
+<video class="st1"  id="myVideo" autoplay="true" src="{{src}}" auto-pause-if-navigate="true"></video>
+<view class="st2">
+<view  bindtap="prev">前一个</view>
+<view bindtap="next">后一个</view>
+</view>
+
+<view class="st5">
+<image class="message" bindtap="pageShow" mode="widthFix" style="" src="/icon/message.png"/>
+<view>{{count}}</view>
+</view>
+
+
+<page-container bind:clickoverlay="pageShow" z-index="102" show="{{isShow}}">
+<view class="st8">{{count}}条评论</view>
+  <view style="height:300px">
+    <scroll-view style="height:100%" scroll-y>
+      <block wx:for="{{data}}" wx:key="id">
+      <view class="st4">      
+      <image mode="widthFix" style="height:30px;width:30px;border-radius:50%;margin-right:8px" src="{{item.avatarUrl}}"/>{{item.nickName}}
+      </view>
+    <view class="st6">{{item.comment}}
+    <view class="st9">{{item.dateTime}}</view>
+    </view>
+    
+  </block>
+    </scroll-view>
+  </view>
+  
+  <view class="st7">
+    <form style="height:60px" catchsubmit="formSubmit" class="st3">
+    <input value="{{comment}}" class="weui-input" name="comment" placeholder="留下你的精彩评论吧" />
+    <button style="width:100px;float:right;margin:0;padding:0;background:none" formType="submit"><image src="/icon/sent.png" style="height:30px;width:30px;" /></button>
+    </form>
+  </view>
+</page-container>
+

@@ -1,0 +1,27 @@
+.st1{
+  width: 100%;
+  text-align:center;  
+}
+.st2{
+  width: 66px;
+  height: 66px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+.st3{
+  padding-bottom:30px;
+  border-bottom: 1px solid rgb(204, 201, 201);
+}
+.st4{
+  width: 100%;
+}
+.st4 li{
+  width: 100%;
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid rgb(204, 201, 201);
+}
+.st4 li image{
+  width: 20px;
+  height: 20px;
+}

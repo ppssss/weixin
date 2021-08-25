@@ -1,0 +1,22 @@
+<view class="st1">
+<view class="st2">
+{{obj.title}}
+</view>
+<view class="st3">
+{{obj.dateTime}}
+</view>
+<rich-text class="st4" nodes="{{obj.content}}"></rich-text>
+<view class="st5"><image bindtap="commentshow" mode="widthFix" src="/icon/comment.png"></image><image bindtap="tocomment" mode="widthFix" src="/icon/message.png"></image></view>
+</view>
+
+<page-container duration='300' bind:clickoverlay="commentshow" z-index="102" show="{{isShow}}">
+  <view class="st12" style="height:250px">
+  <block class="Img" wx:for="{{tempFilePaths}}" wx:key="id"><image mode="scaleToFill" style="height:150px;width:150px;margin:20px" src="{{item}}"></image></block>
+  </view>
+  <view class="st10">
+    <form style="height:60px" catchsubmit="formSubmit" class="st11">
+    <input value="{{comment}}" class="weui-input" name="comment" placeholder="留下你的精彩评论吧" /><image bindtap="chooseImg" style="height:30px;width:30px;" src="/icon/changeImg.png"></image>
+    <button style="width:50px;float:right;margin:0;padding:0;background:none" formType="submit"><navigator url=""><image src="/icon/sent.png" style="height:30px;width:30px;" /></navigator></button>
+    </form>
+  </view>
+</page-container>

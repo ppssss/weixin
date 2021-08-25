@@ -1,0 +1,8 @@
+.container{
+  background-repeat: no-repeat;
+}
+.one {
+ position: fixed;
+ bottom: 50rpx;
+ left:calc(50% - 110px/2)
+} 

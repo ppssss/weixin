@@ -1,0 +1,17 @@
+
+
+<view class="st1">
+<block wx:for="{{data}}" wx:key="id">
+<view class="st5">  
+<navigator url="/pages/{{item.srcType}}Play/{{item.srcType}}Play?id={{item.mediaId}}">
+      <view class="st2">
+    {{item.title}}
+    <text class="st3">{{item.Time}}</text>
+  </view> 
+  </navigator> 
+  <view class="st4" data-id="{{item.id}}" bindtap="delHistory">清除</view>
+</view>
+
+
+</block>
+</view>

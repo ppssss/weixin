@@ -1,0 +1,25 @@
+.st1{
+  text-align: center;
+}
+.st2{
+  font-family: simsun;
+  font-size: 22px;
+  margin: 20rpx 0;
+}
+.st3{
+  font-size: 13px;
+  color:#999;
+}
+.st4{
+  border-top: 1px solid #ccc;
+  margin: 20rpx 0;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-around;
+}
+.st4 image{
+  width: 60rpx;
+  height: 60rpx;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

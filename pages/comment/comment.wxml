@@ -1,0 +1,14 @@
+
+  <scroll-view style="height:100%" scroll-y>
+      <block wx:for="{{data}}" wx:key="id">
+      <view class="st4">      
+      <image mode="widthFix" style="height:30px;width:30px;border-radius:50%;margin-right:8px" src="{{item.avatarUrl}}"/>{{item.nickName}}
+      </view>
+    <view class="st6">{{item.comment}}
+    <view class="commentimg"><image wx:if="{{item.srcone!=='undefined'}}" mode="scaleToFill" src="{{item.srcone}}"/><image wx:if="{{item.srctwo!=='undefined'}}" mode="scaleToFill" src="{{item.srctwo}}"/></view>
+ 
+    <view class="st9">{{item.dateTime}}</view>
+    </view>
+    </block>
+</scroll-view>
+

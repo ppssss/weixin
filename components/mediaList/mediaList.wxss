@@ -1,0 +1,24 @@
+.st1{
+  height: 100%;
+  white-space: nowrap;
+}
+.st2{
+  display: flex;
+  border-bottom: 1px solid rgb(204, 202, 202);
+  padding: 10rpx;
+}
+.st3{
+flex: 7;
+}
+.st4{
+  font-size: 20px;
+}
+.st5{
+  font-size: 13px;
+}
+.st6{
+  flex: 3;
+  width: 100px;
+  height: 65px;
+  border-radius: 10rpx;
+}

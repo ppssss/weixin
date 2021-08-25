@@ -1,0 +1,22 @@
+/* pages/comment/comment.wxss */
+.st4{
+  display: flex;
+  padding: 10px 10px 0 10px;
+  font-size: 13px;
+  align-items: center;
+}
+.st6{
+  padding: 0 0 20px 10px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+  width: 90%;
+  word-break: break-all;
+}
+.st9{
+  font-size:13px ;
+}
+.commentimg{
+  display: flex;
+}
+.commentimg image{
+  height:150px;width:150px;margin:20px
+}

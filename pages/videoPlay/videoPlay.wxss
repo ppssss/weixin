@@ -1,0 +1,65 @@
+.st1{
+  width: 100%;
+  margin-bottom: 0;
+}
+.st2{
+  margin-top: 1rpx;
+  background:black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.st3 {
+ 
+ align-items: center;
+}
+.st3 input{
+  float: left;
+  border-radius: 10rpx;
+  width: 60%;
+  border: 1px solid rgb(202, 194, 194);
+  margin: 10rpx 30rpx;
+}
+.st4{
+  display: flex;
+  padding: 10px 10px 0 10px;
+  font-size: 13px;
+  align-items: center;
+}
+.message{
+  width:35px;
+  height:35px;
+}
+.st5{
+  position: fixed;  
+  top: 350px;
+  left: 265px;
+  display: block;
+
+}
+.st5 view{
+  position: relative;
+  margin-top: -12px;
+  align-items: center;
+  text-align: center;
+  
+}
+.st6{
+  padding: 0 0 20px 10px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+  width: 90%;
+  word-break: break-all;
+}
+.st6:last-child{
+  border: none;
+}
+.st7{
+  border-top:1px solid rgb(187, 187, 187);
+  align-items: center;
+}
+.st8{
+  text-align: center;
+}
+.st9{
+  font-size:13px ;
+}
